@@ -20,6 +20,9 @@ public class Customer implements Serializable {
     public Customer() {
     }
     
+    public int getId(){
+        return id;
+    }
     public String getName(){
         return name;
     }
@@ -30,6 +33,9 @@ public class Customer implements Serializable {
         return purchaseOrders;
     }
     
+    public void setId(int id){
+        this.id = id;
+    }
     public void setName(String name) {
         this.name = name;
     }

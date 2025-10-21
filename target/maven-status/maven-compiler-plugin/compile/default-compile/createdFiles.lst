@@ -1,8 +1,13 @@
 com/store/entities/Customer.class
-com/store/entities/OrderStatus.class
 com/store/entities/PurchaseOrder.class
 com/store/entities/Category.class
+com/store/resource/CustomerResource.class
+com/store/resource/CategoryResource.class
+com/store/resource/PurchaseOrderResource.class
+com/store/entities/Product.class
+com/store/entities/OrderStatus.class
 com/store/entities/OrderItem.class
+com/store/resource/ProductResource.class
 com/store/store/webservice/JakartaRestConfiguration.class
 com/store/store/webservice/resources/JakartaEE10Resource.class
-com/store/entities/Product.class
+com/store/resource/ApplicationConfig.class

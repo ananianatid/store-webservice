@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  *
- * @author ytchao
+ * @author ananianatid
  */
 @Entity(name = "purchase_order")
 public class PurchaseOrder implements Serializable{
@@ -27,14 +27,16 @@ public class PurchaseOrder implements Serializable{
     @JoinColumn(name = "customer_id")
     private Customer customer;
     
-    @OneToMany(mappedBy = "purchaseOrder", cascade = CascadeType.ALL) // CascadeType.ALL peut être utile ici
+    @OneToMany(mappedBy = "purchaseOrder", cascade = CascadeType.PERSIST)
     private List<OrderItem> orderItems;
     
-    public PurchaseOrder(LocalDate date, OrderStatus status) {
-        this.date = date;
-        this.status = status;
+    public PurchaseOrder() {
+        
     }
     
+    public int getId(){
+        return id;
+    }
     public LocalDate getDate(){
         return date;
     }
@@ -59,5 +61,8 @@ public class PurchaseOrder implements Serializable{
     }
     public void setOrderItems(List<OrderItem> orderItems) {
         this.orderItems = orderItems;
+    }
+    public void setId(int id){
+        this.id = id;
     }
 }

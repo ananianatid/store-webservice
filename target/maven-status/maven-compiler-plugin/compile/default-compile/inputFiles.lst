@@ -1,8 +1,13 @@
+/home/ytchao/NetBeansProjects/store-webservice/src/main/java/com/store/resource/CategoryResource.java
+/home/ytchao/NetBeansProjects/store-webservice/src/main/java/com/store/resource/CustomerResource.java
+/home/ytchao/NetBeansProjects/store-webservice/src/main/java/com/store/entities/Product.java
+/home/ytchao/NetBeansProjects/store-webservice/src/main/java/com/store/resource/ProductResource.java
+/home/ytchao/NetBeansProjects/store-webservice/src/main/java/com/store/store/webservice/JakartaRestConfiguration.java
+/home/ytchao/NetBeansProjects/store-webservice/src/main/java/com/store/store/webservice/resources/JakartaEE10Resource.java
+/home/ytchao/NetBeansProjects/store-webservice/src/main/java/com/store/resource/ApplicationConfig.java
 /home/ytchao/NetBeansProjects/store-webservice/src/main/java/com/store/entities/Category.java
 /home/ytchao/NetBeansProjects/store-webservice/src/main/java/com/store/entities/OrderItem.java
-/home/ytchao/NetBeansProjects/store-webservice/src/main/java/com/store/entities/Product.java
-/home/ytchao/NetBeansProjects/store-webservice/src/main/java/com/store/store/webservice/JakartaRestConfiguration.java
 /home/ytchao/NetBeansProjects/store-webservice/src/main/java/com/store/entities/Customer.java
-/home/ytchao/NetBeansProjects/store-webservice/src/main/java/com/store/store/webservice/resources/JakartaEE10Resource.java
 /home/ytchao/NetBeansProjects/store-webservice/src/main/java/com/store/entities/OrderStatus.java
 /home/ytchao/NetBeansProjects/store-webservice/src/main/java/com/store/entities/PurchaseOrder.java
+/home/ytchao/NetBeansProjects/store-webservice/src/main/java/com/store/resource/PurchaseOrderResource.java

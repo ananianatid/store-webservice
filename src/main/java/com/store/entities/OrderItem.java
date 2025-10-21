@@ -4,12 +4,14 @@
  */
 package com.store.entities;
 
+import jakarta.json.bind.annotation.JsonbTransient;
 import jakarta.persistence.*;
 import java.io.Serializable;
 
 /**
  *
- * @author ytchao
+* @author ananianatid
+
  */
 @Entity(name = "order_item")
 public class OrderItem implements Serializable{
@@ -20,7 +22,8 @@ public class OrderItem implements Serializable{
     
     @ManyToOne
     @JoinColumn(name = "purchase_order_id")
-    private PurchaseOrder purcharseOrder;
+    @JsonbTransient
+    private PurchaseOrder purchaseOrder;
     
     @ManyToOne
     @JoinColumn(name = "product_id")
@@ -30,21 +33,27 @@ public class OrderItem implements Serializable{
         
     }
     
+    public int getId(){
+        return id;
+    }
     public int getQuantity(){
         return quantity;
     }
     public PurchaseOrder getPurchaseOrder(){
-        return purcharseOrder;
+        return purchaseOrder;
     }
     public Product getProduct(){
         return product;
     }
     
+    public void setId(int id){
+        this.id = id;
+    }
     public void setQuantity(int quantity){
         this.quantity = quantity;
     }
     public void setPurchaseOrder(PurchaseOrder purchaseOrder){
-        this.purcharseOrder = purchaseOrder;
+        this.purchaseOrder = purchaseOrder;
     } 
     public void setProduct(Product product){
         this.product = product;

@@ -5,6 +5,9 @@
 package com.store.entities;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
@@ -12,10 +15,12 @@ import java.util.List;
 
 /**
  *
- * @author ytchao
+ * @author ananianatid
  */
 @Entity(name = "product")
 public class Product {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     private Double price;
@@ -31,6 +36,9 @@ public class Product {
         
     }
     
+    public int getId(){
+        return id;
+    }
     public String getName(){
         return name;
     }
@@ -41,6 +49,9 @@ public class Product {
         return orderItems;
     }
     
+    public void setId(int id){
+        this.id = id;
+    }
     public void setName(String name){
         this.name = name;
     }

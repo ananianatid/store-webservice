@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author ytchao
+ * @author ananianatid
  */
 @Entity(name = "category")
 public class Category implements Serializable{
@@ -32,11 +32,17 @@ public class Category implements Serializable{
     public List<Product> getProduct(){
         return products;
     }
+    public int getId(){
+        return id;
+    }
     
     public void setName(String name){
         this.name = name;
     }
     public void setProduct(List<Product> products) {
         this.products = products;
+    }
+    public void setId(int id){
+        this.id = id;
     }
 }

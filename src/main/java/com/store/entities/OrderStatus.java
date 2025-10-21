@@ -6,7 +6,7 @@ package com.store.entities;
 
 /**
  *
- * @author ytchao
+ * @author ananianatid
  */
     public enum OrderStatus {
         PENDING,
