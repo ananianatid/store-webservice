@@ -1,2 +1,8 @@
+com/store/entities/Customer.class
+com/store/entities/OrderStatus.class
+com/store/entities/PurchaseOrder.class
+com/store/entities/Category.class
+com/store/entities/OrderItem.class
 com/store/store/webservice/JakartaRestConfiguration.class
 com/store/store/webservice/resources/JakartaEE10Resource.class
+com/store/entities/Product.class
